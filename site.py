@@ -21,9 +21,19 @@ def linguagens():
 @app.route("/visitas")
 def contar():
     return str(visitas)
+
 @app.route("/admin")
 def admin():
     return send_file("admin.html")
+
+@app.route("/webdev")
+def webdev():
+    return send_file("webdev.html")
+
+@app.route("/seguranca")
+def seguranca():
+    return send_file("seguranca.html")
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 3000))
     app.run(host="0.0.0.0", port=port)

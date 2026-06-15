@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Segurança - TechSpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0a0a0a; font-family: Arial; color: #fff; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #222; flex-wrap: wrap; gap: 10px; }
+        .logo { font-size: 1.5em; font-weight: bold; color: #00f5ff; }
+        .nav-links a { color: #aaa; text-decoration: none; margin-left: 15px; font-size: 0.9em; transition: color 0.3s; }
+        .nav-links a:hover { color: #00f5ff; }
+        .hero { text-align: center; padding: 60px 20px 40px; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 15px; }
+        .hero h1 span { color: #ff4444; }
+        .hero p { color: #aaa; max-width: 500px; margin: 0 auto; line-height: 1.8; }
+        .conteudo { max-width: 650px; margin: 0 auto; padding: 40px 20px; }
+        .bloco { background: #111; border: 1px solid #222; border-radius: 16px; padding: 30px; margin-bottom: 20px; }
+        .bloco:hover { border-color: #ff4444; }
+        .bloco h3 { color: #ff4444; margin-bottom: 15px; font-size: 1.2em; }
+        .bloco p { color: #aaa; line-height: 1.8; font-size: 0.95em; }
+        .tag { display: inline-block; background: #ff444422; color: #ff4444; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; margin: 5px 3px 0 0; }
+        footer { text-align: center; padding: 30px; color: #444; border-top: 1px solid #222; font-size: 0.85em; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">⚡ TechSpace</div>
+        <div class="nav-links">
+            <a href="/">Início</a>
+            <a href="/historia">História</a>
+            <a href="/linguagens">Linguagens</a>
+            <a href="/webdev">Web Dev</a>
+            <a href="/seguranca">Segurança</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>🔒 <span>Segurança</span></h1>
+        <p>Entenda como funciona a cibersegurança e como se proteger na internet.</p>
+    </div>
+
+    <div class="conteudo">
+        <div class="bloco">
+            <h3>🤔 O que é Cibersegurança?</h3>
+            <p>Cibersegurança é a área que protege sistemas, redes e dados contra ataques digitais. Com o mundo cada vez mais conectado, ela se tornou essencial para empresas e pessoas. Profissionais da área ganham muito bem e são muito requisitados no mercado.</p>
+        </div>
+        <div class="bloco">
+            <h3>🎯 Tipos de Ataques</h3>
+            <p>Os ataques mais comuns são: Phishing (e-mails falsos pra roubar dados), Malware (vírus e ransomware), Força Bruta (tentativas de adivinhar senhas), SQL Injection (explorar falhas em bancos de dados) e DDoS (derrubar servidores com excesso de requisições).</p>
+            <div><span class="tag">Phishing</span><span class="tag">Malware</span><span class="tag">DDoS</span><span class="tag">SQL Injection</span></div>
+        </div>
+        <div class="bloco">
+            <h3>🛡️ Como se Proteger</h3>
+            <p>Use senhas fortes e únicas para cada site. Ative a autenticação de dois fatores. Mantenha seus sistemas atualizados. Não clique em links suspeitos. Use uma VPN em redes públicas. Faça backups regulares dos seus dados.</p>
+            <div><span class="tag">Senha forte</span><span class="tag">2FA</span><span class="tag">VPN</span><span class="tag">Backup</span></div>
+        </div>
+        <div class="bloco">
+            <h3>⚖️ Hacking Ético</h3>
+            <p>Hacking ético, ou pentest, é quando profissionais autorizado testam sistemas em busca de vulnerabilidades antes que hackers mal-intencionados as encontrem. É uma profissão legal e bem paga. Para aprender de forma legal use TryHackMe e HackTheBox.</p>
+            <div><span class="tag">Pentest</span><span class="tag">TryHackMe</span><span class="tag">HackTheBox</span><span class="tag">Ético</span></div>
+        </div>
+        <div class="bloco">
+            <h3>💼 Carreira em Segurança</h3>
+            <p>A área de cibersegurança é uma das que mais cresce no mundo. Um analista júnior ganha em média R$4.000 a R$7.000 por mês. Sênior pode passar de R$15.000. Certificações como CEH, OSCP e CompTIA Security+ são muito valorizadas.</p>
+            <div><span class="tag">CEH</span><span class="tag">OSCP</span><span class="tag">CompTIA</span><span class="tag">R$15k+</span></div>
+        </div>
+    </div>
+
+    <footer>Feito com 🔥 por JHprogramador & Claude — Python + Flask no Termux</footer>
+</body>
+</html>

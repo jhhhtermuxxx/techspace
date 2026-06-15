@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Dev - TechSpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0a0a0a; font-family: Arial; color: #fff; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #222; flex-wrap: wrap; gap: 10px; }
+        .logo { font-size: 1.5em; font-weight: bold; color: #00f5ff; }
+        .nav-links a { color: #aaa; text-decoration: none; margin-left: 15px; font-size: 0.9em; transition: color 0.3s; }
+        .nav-links a:hover { color: #00f5ff; }
+        .hero { text-align: center; padding: 60px 20px 40px; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 15px; }
+        .hero h1 span { color: #00f5ff; }
+        .hero p { color: #aaa; max-width: 500px; margin: 0 auto; line-height: 1.8; }
+        .conteudo { max-width: 650px; margin: 0 auto; padding: 40px 20px; }
+        .bloco { background: #111; border: 1px solid #222; border-radius: 16px; padding: 30px; margin-bottom: 20px; }
+        .bloco:hover { border-color: #00f5ff; }
+        .bloco h3 { color: #00f5ff; margin-bottom: 15px; font-size: 1.2em; }
+        .bloco p { color: #aaa; line-height: 1.8; font-size: 0.95em; }
+        .tag { display: inline-block; background: #00f5ff22; color: #00f5ff; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; margin: 5px 3px 0 0; }
+        footer { text-align: center; padding: 30px; color: #444; border-top: 1px solid #222; font-size: 0.85em; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">⚡ TechSpace</div>
+        <div class="nav-links">
+            <a href="/">Início</a>
+            <a href="/historia">História</a>
+            <a href="/linguagens">Linguagens</a>
+            <a href="/webdev">Web Dev</a>
+            <a href="/seguranca">Segurança</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>🌐 <span>Web Dev</span></h1>
+        <p>Tudo que você precisa saber sobre desenvolvimento web moderno.</p>
+    </div>
+
+    <div class="conteudo">
+        <div class="bloco">
+            <h3>🤔 O que é Web Dev?</h3>
+            <p>Web Development é a arte de criar sites e aplicações para a internet. É dividido em duas partes: o Frontend, que é tudo que o usuário vê e interage, e o Backend, que é a parte invisível que processa dados, faz login, salva informações e muito mais.</p>
+        </div>
+        <div class="bloco">
+            <h3>🎨 Frontend</h3>
+            <p>O Frontend é a parte visual do site. É construído com HTML (estrutura), CSS (estilo e cores) e JavaScript (interação). Frameworks como React, Vue e Angular tornam o desenvolvimento mais rápido e organizado. É o que o usuário vê na tela.</p>
+            <div><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Vue</span></div>
+        </div>
+        <div class="bloco">
+            <h3>⚙️ Backend</h3>
+            <p>O Backend é o cérebro do site. Roda em servidores, processa dados, cuida do banco de dados e garante a segurança. É construído com linguagens como Python (Flask/Django), Node.js, Java ou PHP. Sem backend não há login, nem banco de dados.</p>
+            <div><span class="tag">Python</span><span class="tag">Node.js</span><span class="tag">Flask</span><span class="tag">Django</span><span class="tag">PHP</span></div>
+        </div>
+        <div class="bloco">
+            <h3>🗄️ Banco de Dados</h3>
+            <p>Todo site que salva informações precisa de um banco de dados. Os mais usados são MySQL, PostgreSQL e SQLite para dados relacionais, e MongoDB para dados não relacionais. Eles guardam usuários, posts, produtos e tudo mais.</p>
+            <div><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">SQLite</span></div>
+        </div>
+        <div class="bloco">
+            <h3>🚀 Este site foi feito com</h3>
+            <p>O TechSpace foi criado com Python + Flask no backend, HTML e CSS puro no frontend, rodando no Termux de um celular Android. Hospedado gratuitamente no Render e versionado no GitHub. Prova de que qualquer um pode criar!</p>
+            <div><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Render</span><span class="tag">GitHub</span></div>
+        </div>
+    </div>
+
+    <footer>Feito com 🔥 por JHprogramador & Claude — Python + Flask no Termux</footer>
+</body>
+</html>
