@@ -21,7 +21,9 @@ def linguagens():
 @app.route("/visitas")
 def contar():
     return str(visitas)
-
+@app.route("/admin")
+def admin():
+    return send_file("admin.html")
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 3000))
     app.run(host="0.0.0.0", port=port)
