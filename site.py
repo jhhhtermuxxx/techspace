@@ -1,4 +1,5 @@
 from flask import Flask, send_file
+import os
 
 app = Flask(__name__)
 visitas = 0
@@ -21,4 +22,6 @@ def linguagens():
 def contar():
     return str(visitas)
 
-app.run(debug=True, port=3000)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 3000))
+    app.run(host="0.0.0.0", port=port)
