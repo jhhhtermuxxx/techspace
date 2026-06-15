@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linguagens - TechSpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0a0a0a; font-family: Arial; color: #fff; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #222; flex-wrap: wrap; gap: 10px; }
+        .logo { font-size: 1.5em; font-weight: bold; color: #00f5ff; }
+        .nav-links a { color: #aaa; text-decoration: none; margin-left: 15px; font-size: 0.9em; }
+        .nav-links a:hover { color: #00f5ff; }
+        .hero { text-align: center; padding: 60px 20px 40px; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 15px; }
+        .hero h1 span { color: #00f5ff; }
+        .hero p { color: #aaa; max-width: 500px; margin: 0 auto; line-height: 1.8; }
+        .lista { max-width: 650px; margin: 0 auto; padding: 40px 20px; }
+        .lang { background: #111; border: 1px solid #222; border-radius: 16px; padding: 25px; margin-bottom: 20px; cursor: pointer; transition: border 0.3s; }
+        .lang:hover { border-color: #00f5ff; }
+        .lang-header { display: flex; align-items: center; gap: 15px; }
+        .lang-header .icon { font-size: 2em; }
+        .lang-header h3 { font-size: 1.2em; }
+        .lang-header .nivel { margin-left: auto; font-size: 0.8em; padding: 4px 12px; border-radius: 20px; font-weight: bold; }
+        .facil { background: #00f5ff22; color: #00f5ff; }
+        .medio { background: #f5a62322; color: #f5a623; }
+        .dificil { background: #ff444422; color: #ff4444; }
+        .lang-desc { color: #777; font-size: 0.9em; line-height: 1.7; margin-top: 15px; display: none; border-top: 1px solid #222; padding-top: 15px; }
+        .lang-desc.ativo { display: block; }
+        footer { text-align: center; padding: 30px; color: #444; border-top: 1px solid #222; font-size: 0.85em; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">⚡ TechSpace</div>
+        <div class="nav-links">
+            <a href="/">Início</a>
+            <a href="/historia">História</a>
+            <a href="/linguagens">Linguagens</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>🖥️ <span>Linguagens</span></h1>
+        <p>Clique em cada linguagem pra ver a explicação!</p>
+    </div>
+
+    <div class="lista">
+
+        <div class="lang" onclick="toggle('python')">
+            <div class="lang-header">
+                <div class="icon">🐍</div>
+                <h3>Python</h3>
+                <span class="nivel facil">Fácil</span>
+            </div>
+            <div class="lang-desc" id="python">
+                Python é a linguagem mais fácil de aprender! Sua sintaxe é simples e parece quase inglês. Usada em IA, sites, automação, bots e muito mais. Perfeita pra quem tá começando. Foi criada por Guido van Rossum em 1991.
+            </div>
+        </div>
+
+        <div class="lang" onclick="toggle('javascript')">
+            <div class="lang-header">
+                <div class="icon">🌐</div>
+                <h3>JavaScript</h3>
+                <span class="nivel facil">Fácil</span>
+            </div>
+            <div class="lang-desc" id="javascript">
+                JavaScript é a linguagem da web! Roda direto no navegador e deixa os sites interativos. É ela que faz botões, animações e menus funcionarem. Também serve pro backend com Node.js. Criada em 1995 pela Netscape.
+            </div>
+        </div>
+
+        <div class="lang" onclick="toggle('java')">
+            <div class="lang-header">
+                <div class="icon">☕</div>
+                <h3>Java</h3>
+                <span class="nivel medio">Médio</span>
+            </div>
+            <div class="lang-desc" id="java">
+                Java é uma linguagem robusta usada em aplicativos Android, sistemas bancários e grandes empresas. É mais verbosa que Python, mas muito poderosa. Criada pela Sun Microsystems em 1995. "Escreva uma vez, rode em qualquer lugar!"
+            </div>
+        </div>
+
+        <div class="lang" onclick="toggle('cpp')">
+            <div class="lang-header">
+                <div class="icon">⚙️</div>
+                <h3>C++</h3>
+                <span class="nivel dificil">Difícil</span>
+            </div>
+            <div class="lang-desc" id="cpp">
+                C++ é uma linguagem extremamente rápida usada em jogos, sistemas operacionais e softwares de alta performance. É mais complexa mas dá controle total sobre o computador. Criada por Bjarne Stroustrup em 1985.
+            </div>
+        </div>
+
+        <div class="lang" onclick="toggle('kotlin')">
+            <div class="lang-header">
+                <div class="icon">📱</div>
+                <h3>Kotlin</h3>
+                <span class="nivel medio">Médio</span>
+            </div>
+            <div class="lang-desc" id="kotlin">
+                Kotlin é a linguagem oficial do Android atualmente! Mais moderna e fácil que Java, foi criada pela JetBrains em 2011. Se você quer criar apps pra Android, Kotlin é o caminho certo.
+            </div>
+        </div>
+
+        <div class="lang" onclick="toggle('swift')">
+            <div class="lang-header">
+                <div class="icon">🍎</div>
+                <h3>Swift</h3>
+                <span class="nivel medio">Médio</span>
+            </div>
+            <div class="lang-desc" id="swift">
+                Swift é a linguagem da Apple pra criar apps no iPhone e Mac. É moderna, rápida e segura. Criada pela Apple em 2014. Se o seu sonho é criar apps pra iOS, Swift é essencial!
+            </div>
+        </div>
+
+    </div>
+
+    <footer>Feito com 🔥 por JHprogramador & Claude — Python + Flask no Termux</footer>
+
+    <script>
+        function toggle(id) {
+            const desc = document.getElementById(id);
+            desc.classList.toggle('ativo');
+        }
+    </script>
+</body>
+</html>
